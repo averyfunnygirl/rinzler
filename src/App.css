@@ -1,0 +1,151 @@
+/* General styling */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+a {
+  color: #99d8d0;
+}
+
+/* Header styling */
+.App-header {
+  align-items: center;
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+}
+
+.App-header h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Main styling */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 960px;
+}
+
+.note-form, .note-list {
+  background-color: #2f2f2f;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 48%;
+}
+
+.note-form {
+  margin-right: 10px;
+}
+
+.note-form h2, .note-list h2 {
+  color: #99d8d0;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.note-form label, .note-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.note-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.note-form textarea {
+  background-color: #191919;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  width: 95%;
+}
+
+.note-form button {
+  background-color: #99d8d0;
+  border: none;
+  border-radius: 3px;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.note-list ul {
+  list-style: none;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.note-list li {
+  align-items: center;
+  border-bottom: 1px solid #99d8d0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.note-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.note-text {
+  color: #fff;
+  flex: 1;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #99d8d0;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .note-form, .note-list {
+    margin: 0;
+    width: 100%;
+  }
+}
